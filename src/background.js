@@ -25,6 +25,6 @@ function canadianize(text)
 	text = text.replace(/\bbro\b/gi, "bud");
 	text = text.replace(/\bcss\b/gi, "maple syrup");
 	text = text.replace(/\babout\b/gi, "aboot");
-	text = text.replace(/\s*\?\s*$/, ", eh?");
+	text = text.replace(/\s*(\?\s*)$/, ", eh$1");
 	return text;
 }
