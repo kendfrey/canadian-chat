@@ -20,7 +20,7 @@ function canadianize(text)
 	text = text.replace(/\bhtml\b/gi, "Tim Horton's");
 	text = text.replace(/\bfunctions\b/gi, "all-dressed chips");
 	text = text.replace(/\bcoding\b/gi, "givin'er");
-	text = text.replace(/n? error\b/gi, " moose");
+	text = text.replace(/(?:n( ))?\berror\b/gi, "$1moose");
 	text = text.replace(/\bthe game\b/gi, "Canada");
 	text = text.replace(/\bbro\b/gi, "bud");
 	text = text.replace(/\bcss\b/gi, "maple syrup");
